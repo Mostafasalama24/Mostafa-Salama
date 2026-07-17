@@ -1,59 +1,1883 @@
-0001  <!DOCTYPE html>
+<!DOCTYPE html>
 
-0002  <html lang="de">
+<html lang="en">
 
-0003  <head>
+<head>
 
-0004  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
 
-0005  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-0006  <meta name="description" content="Portfolio von Mostafa Salama – Maschinenbau, TGA/HKLS und Energietechnik.">
+  <meta name="description" content="Engineering portfolio of Mostafa Salama, presenting capabilities in TGA/HKLS, energy systems, maintenance, test engineering and digital fabrication." />
 
-0007  <title>Mostafa Salama | Engineering Portfolio</title>
+  <title>Mostafa Salama | Engineering Portfolio</title>
 
-0008  <style>
+ 
 
-0009  :root{--bg:#08110d;--panel:#122019;--panel2:#192b22;--text:#edf5ef;--muted:#a5b4aa;--lime:#b7f34b;--green:#4ade80;--amber:#fbbf24;--line:rgba(220,252,231,.14);--r:24px;--shadow:0 24px 55px rgba(0,0,0,.3)}
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
 
-0010  *{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;color:var(--text);font-family:Inter,"Segoe UI",Arial,sans-serif;line-height:1.65;background:radial-gradient(circle at 10% 8%,rgba(74,222,128,.1),transparent 28%),radial-gradient(circle at 92% 18%,rgba(251,191,36,.08),transparent 24%),var(--bg)}a{color:inherit}.shell{width:min(1180px,calc(100% - 30px));margin:auto;padding:16px 0 60px}.topbar{position:sticky;top:12px;z-index:20;display:flex;align-items:center;justify-content:space-between;gap:16px;margin-bottom:22px;padding:11px 14px;border:1px solid var(--line);border-radius:17px;background:rgba(8,17,13,.8);backdrop-filter:blur(15px);box-shadow:0 14px 32px rgba(0,0,0,.22)}.brand{display:flex;align-items:center;gap:10px;font-weight:900;text-decoration:none}.mark{display:grid;place-items:center;width:37px;height:37px;color:#09110d;border-radius:11px;background:linear-gradient(135deg,var(--lime),var(--green))}.nav{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:4px}.nav a,.lang{padding:8px 10px;color:var(--muted);font:inherit;font-size:13px;font-weight:800;text-decoration:none;border:0;border-radius:9px;background:transparent;cursor:pointer}.nav a:hover,.lang:hover,.lang.active{color:var(--text);background:rgba(183,243,75,.1)}.layout{display:grid;grid-template-columns:320px minmax(0,1fr);gap:22px;align-items:start}.sidebar{position:sticky;top:91px;overflow:hidden;border:1px solid var(--line);border-radius:var(--r);background:linear-gradient(180deg,var(--panel2),#0e1c16);box-shadow:var(--shadow)}.profile{padding:27px;background:linear-gradient(145deg,rgba(183,243,75,.15),transparent 54%)}.photo{display:block;width:115px;height:115px;margin-bottom:20px;object-fit:cover;border:4px solid #e8f3eb;border-radius:28px;box-shadow:0 18px 35px rgba(0,0,0,.3)}.profile h1{margin:0;font-size:38px;line-height:.98;letter-spacing:-1.7px}.profile h1 span{color:var(--lime)}.role{margin:13px 0 0;color:#d0ddd4;font-size:14px;font-weight:650}.sidebody{padding:23px 26px 28px}.status{display:inline-flex;align-items:center;gap:8px;padding:7px 10px;color:#dfffc2;font-size:11px;font-weight:850;border:1px solid rgba(183,243,75,.22);border-radius:999px;background:rgba(183,243,75,.08)}.dot{width:8px;height:8px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 5px rgba(183,243,75,.1)}.sidetitle{margin:23px 0 10px;color:var(--lime);font-size:11px;font-weight:900;letter-spacing:1.4px;text-transform:uppercase}.contact,.plain{display:grid;gap:9px;margin:0;padding:0;list-style:none}.contact a{display:flex;gap:9px;color:#d6e1da;font-size:13px;text-decoration:none;overflow-wrap:anywhere}.contact a:hover{color:var(--lime)}.pills{display:flex;flex-wrap:wrap;gap:7px}.pills span{padding:6px 8px;color:#d9e6dd;font-size:11px;font-weight:750;border:1px solid var(--line);border-radius:9px;background:rgba(255,255,255,.03)}main{display:grid;gap:22px}.hero,.card,.contactbox{border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow)}.hero{position:relative;overflow:hidden;min-height:430px;display:flex;flex-direction:column;justify-content:flex-end;padding:52px;background:linear-gradient(130deg,rgba(183,243,75,.12),transparent 45%),radial-gradient(circle at 82% 25%,rgba(251,191,36,.12),transparent 24%),var(--panel)}.hero:before{content:"MS";position:absolute;top:18px;right:28px;color:rgba(237,245,239,.035);font-size:180px;font-weight:950;line-height:1;letter-spacing:-15px}.kicker{position:relative;color:var(--lime);font-size:12px;font-weight:900;letter-spacing:1.7px;text-transform:uppercase}.hero h2{position:relative;max-width:790px;margin:13px 0 0;font-size:clamp(40px,6vw,70px);line-height:1.03;letter-spacing:-3px}.hero h2 em{color:var(--lime);font-style:normal}.hero p{position:relative;max-width:750px;margin:22px 0 0;color:var(--muted);font-size:17px}.actions{position:relative;display:flex;flex-wrap:wrap;gap:10px;margin-top:27px}.btn{display:inline-flex;align-items:center;justify-content:center;min-height:45px;padding:10px 16px;font-weight:850;text-decoration:none;border:1px solid var(--line);border-radius:11px}.primary{color:#08110d;border:0;background:linear-gradient(135deg,var(--lime),var(--green))}.btn:hover{transform:translateY(-2px)}.card{padding:37px;background:rgba(18,32,25,.9)}.heading{display:flex;align-items:end;justify-content:space-between;gap:22px;margin-bottom:27px}.heading h2{margin:0;font-size:33px;line-height:1.1}.heading p{max-width:420px;margin:0;color:var(--muted);font-size:13px;text-align:right}.timeline{display:grid}.item{position:relative;display:grid;grid-template-columns:125px minmax(0,1fr);gap:23px;padding-bottom:29px}.item:not(:last-child):before{content:"";position:absolute;left:131px;top:20px;bottom:0;width:1px;background:var(--line)}.date{padding-top:2px;color:var(--lime);font-size:12px;font-weight:900;text-align:right}.content{position:relative;padding-left:27px}.content:before{content:"";position:absolute;left:0;top:6px;width:11px;height:11px;border:3px solid var(--panel);border-radius:50%;background:var(--lime)}.content h3{margin:0;font-size:19px}.org{margin:4px 0 10px;color:var(--muted);font-size:13px;font-style:italic}.content ul,.project ul{margin:0;padding-left:18px;color:#c6d2ca}.content li+li,.project li+li{margin-top:4px}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px}.project,.edu,.credential{padding:23px;border:1px solid var(--line);border-radius:17px;background:rgba(255,255,255,.025)}.project:hover{border-color:rgba(183,243,75,.35);transform:translateY(-3px)}.number{margin-bottom:15px;color:var(--amber);font-size:11px;font-weight:900;letter-spacing:1.5px;text-transform:uppercase}.project h3,.edu h3{margin:0 0 7px;font-size:19px}.meta,.edu p,.credential p{margin:0 0 12px;color:var(--muted);font-size:13px}.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}.tags span{padding:5px 8px;color:#dfffc2;font-size:10px;font-weight:850;border-radius:999px;background:rgba(183,243,75,.08)}.year{color:var(--lime);font-size:11px;font-weight:900;letter-spacing:1.2px;text-transform:uppercase}.credentials{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:13px}.credential{display:grid;grid-template-columns:43px 1fr;gap:12px}.icon{display:grid;place-items:center;width:43px;height:43px;color:#0b140f;font-weight:950;border-radius:12px;background:linear-gradient(135deg,var(--amber),#fb923c)}.credential h3{margin:0 0 3px;font-size:16px}.contactbox{padding:44px;background:radial-gradient(circle at 86% 30%,rgba(251,191,36,.15),transparent 26%),linear-gradient(135deg,#1d342a,#102119)}.contactbox h2{max-width:680px;margin:0;font-size:41px;line-height:1.08;letter-spacing:-1.3px}.contactbox p{max-width:680px;color:var(--muted)}footer{padding-top:28px;color:#809087;font-size:12px;text-align:center}[data-lang=en]{display:none}body.en [data-lang=de]{display:none}body.en [data-lang=en]{display:initial}@media(max-width:950px){.layout{grid-template-columns:1fr}.sidebar{position:relative;top:auto;display:grid;grid-template-columns:.9fr 1.1fr}.grid,.credentials{grid-template-columns:1fr}}@media(max-width:650px){.shell{width:calc(100% - 18px)}.nav a{display:none}.sidebar{display:block}.hero{min-height:360px;padding:34px 24px}.card{padding:26px 20px}.heading{align-items:flex-start;flex-direction:column}.heading p{text-align:left}.item{grid-template-columns:1fr;gap:7px}.date{text-align:left}.item:not(:last-child):before{left:5px;top:49px}.contactbox{padding:34px 24px}.contactbox h2{font-size:33px}}
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
-0011  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
 
-0012  </head>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-0013  <body>
+ 
 
-0014  <div class="shell">
+  <style>
 
-0015  <header class="topbar"><a class="brand" href="#top"><span class="mark">MS</span>Mostafa Salama</a><nav class="nav"><a href="#experience" data-lang="de">Erfahrung</a><a href="#experience" data-lang="en">Experience</a><a href="#projects" data-lang="de">Projekte</a><a href="#projects" data-lang="en">Projects</a><a href="#education" data-lang="de">Studium</a><a href="#education" data-lang="en">Education</a><a href="#contact" data-lang="de">Kontakt</a><a href="#contact" data-lang="en">Contact</a><button class="lang active" data-set="de">DE</button><button class="lang" data-set="en">EN</button></nav></header>
+    :root {
 
-0016  <div class="layout" id="top">
+      --ink: #101820;
 
-0017  <aside class="sidebar"><div class="profile"><img class="photo" src="profile.jpg" alt="Mostafa Salama"><h1>Mostafa <span>Salama</span></h1><p class="role" data-lang="de">Masterstudent Maschinenbau · TGA/HKLS · Energietechnik</p><p class="role" data-lang="en">Mechanical Engineering M.Eng. Student · MEP/HVAC · Energy</p></div><div class="sidebody"><div class="status"><span class="dot"></span><span data-lang="de">Offen für Werkstudenten- und Berufseinstiegsmöglichkeiten</span><span data-lang="en">Open to working-student and graduate roles</span></div><div class="sidetitle">Kontakt</div><ul class="contact"><li><a href="tel:+491781526297">☎ +49 178 1526297</a></li><li><a href="mailto:mostafaabdellatief9@gmail.com">@ mostafaabdellatief9@gmail.com</a></li><li><a href="#">in LinkedIn-Profil</a></li><li>Dortmund, Deutschland</li></ul><div class="sidetitle" data-lang="de">Kernkompetenzen</div><div class="sidetitle" data-lang="en">Core Skills</div><div class="pills"><span>TGA/HKLS</span><span>Revit MEP</span><span>AutoCAD</span><span>Instandhaltung</span><span>PV*SOL</span><span>SKF Monitoring</span><span>Arbeitssicherheit</span><span>3D-Druck</span></div><div class="sidetitle" data-lang="de">Sprachen</div><div class="sidetitle" data-lang="en">Languages</div><ul class="plain"><li>Arabisch — Muttersprache</li><li>Deutsch — C1</li><li>Englisch — C1</li></ul><div class="sidetitle" data-lang="de">Weitere Angaben</div><div class="sidetitle" data-lang="en">Additional</div><ul class="plain"><li data-lang="de">Führerschein B197 — in Ausbildung seit Juli 2026</li><li data-lang="en">Driving licence B197 — in progress since July 2026</li><li>Formula Student Team (CURT)</li></ul></div></aside>
+      --ink-soft: #3f4b55;
 
-0018  <main>
+      --paper: #f4f1eb;
 
-0019  <section class="hero"><div class="kicker" data-lang="de">Maschinenbau trifft Gebäudetechnik</div><div class="kicker" data-lang="en">Mechanical engineering meets building services</div><h2 data-lang="de">Technische Systeme <em>sicherer, effizienter</em> und praktikabler machen.</h2><h2 data-lang="en">Making technical systems <em>safer, more efficient</em> and practical.</h2><p data-lang="de">Maschinenbauingenieur und Masterstudent mit Schwerpunkt Energietechnik sowie wachsender Spezialisierung in TGA/HKLS. Praxiserfahrung in industrieller Instandhaltung, Arbeitssicherheit, Energieanlagen, Prüfstandstechnik und CAD-gestützter Planung.</p><p data-lang="en">Mechanical engineer and master's student focused on energy engineering and an expanding specialization in MEP/HVAC, with practical experience in industrial maintenance, safety, energy systems and test engineering.</p><div class="actions"><a class="btn primary" href="mailto:mostafaabdellatief9@gmail.com" data-lang="de">Kontakt aufnehmen</a><a class="btn primary" href="mailto:mostafaabdellatief9@gmail.com" data-lang="en">Get in touch</a><a class="btn" href="Mostafa-Salama-Lebenslauf.pdf" target="_blank" data-lang="de">Lebenslauf öffnen</a><a class="btn" href="Mostafa-Salama-CV.pdf" target="_blank" data-lang="en">Open CV</a></div></section>
+      --paper-2: #ebe5dc;
 
-0020  <section class="card" id="experience"><div class="heading"><h2 data-lang="de">Berufserfahrung</h2><h2 data-lang="en">Professional Experience</h2><p data-lang="de">Praxis in Sicherheit, Wartung, technischer Analyse und Anlagenbetrieb.</p><p data-lang="en">Hands-on work in safety, maintenance, technical analysis and plant operations.</p></div><div class="timeline"><article class="item"><div class="date">Jan. 2026 – heute</div><div class="content"><h3 data-lang="de">Fachkraft für Arbeitssicherheit</h3><h3 data-lang="en">Occupational Safety Specialist</h3><p class="org">Dräger / BASF Ludwigshafen, Deutschland</p><ul data-lang="de"><li>Überwachung der Einhaltung von Arbeitsschutz- und Sicherheitsvorschriften.</li><li>Sicherstellung des sicheren Einsatzes von PSA, Werkzeugen und Gasmessgeräten.</li><li>Kontrolle von Brandschutzmaßnahmen bei Heißarbeiten.</li><li>Unterstützung bei sicherheitsrelevanten Maßnahmen im Anlagenbetrieb.</li></ul><ul data-lang="en"><li>Monitoring compliance with occupational safety regulations.</li><li>Ensuring safe use of PPE, tools and gas-detection equipment.</li><li>Checking fire protection during hot work.</li><li>Supporting safety actions during plant operation.</li></ul></div></article><article class="item"><div class="date">Aug. 2022 – Sept. 2023</div><div class="content"><h3 data-lang="de">Wartungsingenieur</h3><h3 data-lang="en">Maintenance Engineer</h3><p class="org">First Co. for Industrial Development, Kairo</p><ul data-lang="de"><li>Wartung von Pumpen, Filtern, Sieben und Kondensatableitern.</li><li>SKF-Monitoring zur Optimierung von Schmierintervallen und Lagerzuständen.</li><li>Störungsanalyse und vorbeugende Instandhaltung.</li><li>Lieferantenabstimmung zu Ersatzteilen und Spezifikationen.</li><li>Mitwirkung an Energieeffizienz und Anlagenverfügbarkeit.</li></ul><ul data-lang="en"><li>Maintenance of pumps, filters, screens and steam traps.</li><li>SKF monitoring for lubrication and bearing-condition optimization.</li><li>Fault analysis and preventive maintenance.</li><li>Supplier coordination for spare parts and specifications.</li><li>Support for efficiency and availability improvements.</li></ul></div></article></div></section>
+      --white: #ffffff;
 
-0021  <section class="card" id="projects"><div class="heading"><h2 data-lang="de">Ausgewählte Projekte</h2><h2 data-lang="en">Selected Projects</h2><p data-lang="de">Energie, Prüfstand, Konstruktion und digitale Fertigung.</p><p data-lang="en">Energy, test engineering, design and digital fabrication.</p></div><div class="grid"><article class="project"><div class="number">Projekt 01</div><h3 data-lang="de">Powertrain- und Prüfstandprojekt</h3><h3 data-lang="en">Powertrain & Test Bench Project</h3><p class="meta">FH Dortmund · Okt. 2024 – Okt. 2025</p><ul data-lang="de"><li>Einjährige Mitarbeit im Powertrain- und Prüfstandsteam.</li><li>Durchführung und Auswertung von Prüfstandsversuchen.</li><li>Analyse von Messdaten und Optimierung von Prüfabläufen.</li><li>Zusammenarbeit bei Entwicklung und Validierung technischer Systeme.</li></ul><ul data-lang="en"><li>One-year participation in the powertrain/test-bench team.</li><li>Execution and evaluation of test-bench experiments.</li><li>Data analysis and process optimization.</li><li>Collaboration on system development and validation.</li></ul><div class="tags"><span>Powertrain</span><span>Messtechnik</span><span>Prüfstand</span></div></article><article class="project"><div class="number">Projekt 02</div><h3 data-lang="de">PV-Anlage zur landwirtschaftlichen Bewässerung</h3><h3 data-lang="en">Photovoltaic Irrigation System</h3><p class="meta">Universität Kairo · Bachelorprojekt · Note 1,0</p><ul data-lang="de"><li>Planung einer netzunabhängigen PV-Anlage.</li><li>Standortanalyse und Moduldimensionierung mit PV*SOL.</li><li>Energiebedarfsberechnung für Pumpen und Steuerungen.</li><li>Teamarbeit bei Planung und Realisierung.</li></ul><ul data-lang="en"><li>Design of an off-grid PV system.</li><li>Site analysis and sizing using PV*SOL.</li><li>Energy-demand calculation for pumps and controls.</li><li>Team-based planning and implementation.</li></ul><div class="tags"><span>PV*SOL</span><span>Solarenergie</span><span>Pumpen</span></div></article><article class="project"><div class="number">Projekt 03</div><h3>3DExpressCairo</h3><p class="meta">Gründer · Jan. 2022 – Sept. 2023</p><ul data-lang="de"><li>Kundenspezifische Produkte mittels 3D-Druck und Laserschneiden.</li><li>Technische Beratung, Materialauswahl und Kalkulation.</li><li>Aufbau von Lithium-Ionen-Batteriepacks.</li><li>Beschaffung und internationale Lieferantenkommunikation.</li></ul><ul data-lang="en"><li>Custom products using 3D printing and laser cutting.</li><li>Technical consulting, material selection and costing.</li><li>Assembly of lithium-ion battery packs.</li><li>Procurement and international supplier communication.</li></ul><div class="tags"><span>3D-Druck</span><span>Fusion 360</span><span>Prototyping</span></div></article><article class="project"><div class="number">Mitgliedschaft</div><h3>Formula Student – CURT</h3><p class="meta">Cairo University Racing Team · 2021 – 2022</p><ul data-lang="de"><li>Mitarbeit im Bereich Kühlung und Wärmetauscher.</li><li>Technische Teamarbeit in der Fahrzeugentwicklung.</li></ul><ul data-lang="en"><li>Work on cooling and heat-exchanger systems.</li><li>Engineering teamwork in vehicle development.</li></ul><div class="tags"><span>Wärmeübertragung</span><span>Fahrzeugtechnik</span></div></article></div></section>
+      --teal: #0f766e;
 
-0022  <section class="card" id="education"><div class="heading"><h2 data-lang="de">Studium</h2><h2 data-lang="en">Education</h2><p data-lang="de">Maschinenbau, Energietechnik und angewandte Projekte.</p><p data-lang="en">Mechanical engineering, energy systems and applied projects.</p></div><div class="grid"><article class="edu"><div class="year">Sept. 2024 – heute</div><h3 data-lang="de">Master Maschinenbau (M.Eng.)</h3><h3 data-lang="en">M.Eng. Mechanical Engineering</h3><p>Fachhochschule Dortmund</p><p data-lang="de">Schwerpunkt Energietechnik · Abschluss voraussichtlich 2027</p><p data-lang="en">Focus: Energy Engineering · Expected graduation 2027</p></article><article class="edu"><div class="year">Sept. 2017 – Juli 2022</div><h3 data-lang="de">Bachelor Maschinenbau – Energietechnik</h3><h3 data-lang="en">B.Sc. Mechanical Engineering – Energy</h3><p>Universität Kairo</p><p data-lang="de">Abschlussnote 2,7 · Bachelorprojekt 1,0</p><p data-lang="en">Final grade 2.7 · Thesis project 1.0</p></article></div></section>
+      --teal-light: #ccfbf1;
 
-0023  <section class="card" id="training"><div class="heading"><h2 data-lang="de">Weiterbildungen & Praktika</h2><h2 data-lang="en">Training & Internships</h2><p data-lang="de">Aktuelle Spezialisierung in TGA/HKLS plus industrielle Einblicke.</p><p data-lang="en">Current MEP/HVAC specialization plus industrial exposure.</p></div><div class="credentials"><article class="credential"><div class="icon">MEP</div><div><h3>Online-Diplom TGA/HKLS</h3><p>House of Engineers, Kairo (online) · seit Juni 2026</p><p>HKLS-Planung, Revit MEP, AutoCAD, Brandschutz</p></div></article><article class="credential"><div class="icon">CAD</div><div><h3>Maker Diploma – Digitale Fabrikation</h3><p>US-Botschaft Kooperation · Jan.–Apr. 2023</p><p>Fusion 360, 3D-Druck, Laserschneiden, Praxisprojekt</p></div></article><article class="credential"><div class="icon">PLC</div><div><h3>Siemens Automatisierungsdiplom</h3><p>Apr.–Juli 2021</p><p>SPS, HMI, SCADA und Antriebstechnik</p></div></article><article class="credential"><div class="icon">HVAC</div><div><h3>Praktikum HKLS / Gebäudetechnik</h3><p>Alexandria Company · März–Sept. 2020</p><p>Heizung, Lüftung, Klima, Sanitär, Brandschutz und technische Zeichnungen</p></div></article><article class="credential"><div class="icon">ENG</div><div><h3>Praktikum Energietechnik</h3><p>United Gas Derivatives Company · Mai–Aug. 2019</p><p>Gas- und Dampfturbinen sowie industrielle Energieanlagen</p></div></article><article class="credential"><div class="icon">CAR</div><div><h3>Praktikum Fahrzeugtechnik</h3><p>Arab Contractors · Sept.–Okt. 2019</p><p>Aufbau und Funktionsweise von Verbrennungsmotoren</p></div></article></div></section>
+      --copper: #c66b3d;
 
-0024  <section class="contactbox" id="contact"><h2 data-lang="de">Bereit für Projekte in TGA, HKLS, Energie oder Instandhaltung.</h2><h2 data-lang="en">Ready for projects in MEP, HVAC, energy or maintenance.</h2><p data-lang="de">Ich freue mich über Werkstudentenstellen, Abschlussarbeiten und Berufseinstiegsmöglichkeiten im technischen Umfeld.</p><p data-lang="en">I welcome working-student, thesis and graduate opportunities in technical environments.</p><div class="actions"><a class="btn primary" href="mailto:mostafaabdellatief9@gmail.com">E-Mail</a><a class="btn" href="#">LinkedIn</a></div></section>
+      --navy: #142b3a;
 
-0025  </main></div><footer>© <span id="year"></span> Mostafa Salama · Portfolio</footer></div>
+      --line: rgba(16, 24, 32, 0.14);
 
-0026  <script>
+      --shadow: 0 24px 70px rgba(20, 43, 58, 0.12);
 
-0027  const buttons=document.querySelectorAll('[data-set]');buttons.forEach(b=>b.addEventListener('click',()=>{document.body.classList.toggle('en',b.dataset.set==='en');document.documentElement.lang=b.dataset.set;buttons.forEach(x=>x.classList.toggle('active',x===b));}));document.getElementById('year').textContent=new Date().getFullYear();
+      --radius-lg: 28px;
 
-0028  </script>
+      --radius-md: 18px;
 
-0029  </body>
+      --max-width: 1180px;
 
-0030  </html>
+    }
+
+ 
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+
+ 
+
+    body {
+
+      margin: 0;
+
+      color: var(--ink);
+
+      background: var(--paper);
+
+      font-family: "Manrope", Arial, sans-serif;
+
+      line-height: 1.65;
+
+    }
+
+ 
+
+    img, video { max-width: 100%; }
+
+    a { color: inherit; }
+
+ 
+
+    .shell {
+
+      width: min(var(--max-width), calc(100% - 40px));
+
+      margin-inline: auto;
+
+    }
+
+ 
+
+    .topbar {
+
+      position: sticky;
+
+      top: 0;
+
+      z-index: 1000;
+
+      border-bottom: 1px solid rgba(255,255,255,.08);
+
+      background: rgba(16, 24, 32, .86);
+
+      backdrop-filter: blur(18px);
+
+    }
+
+ 
+
+    .topbar-inner {
+
+      min-height: 74px;
+
+      display: flex;
+
+      align-items: center;
+
+      justify-content: space-between;
+
+      gap: 24px;
+
+    }
+
+ 
+
+    .brand {
+
+      display: flex;
+
+      align-items: center;
+
+      gap: 12px;
+
+      color: white;
+
+      text-decoration: none;
+
+      font-family: "Space Grotesk", sans-serif;
+
+      font-weight: 700;
+
+      letter-spacing: -.02em;
+
+    }
+
+ 
+
+    .brand-mark {
+
+      width: 38px;
+
+      height: 38px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 12px;
+
+      color: var(--ink);
+
+      background: linear-gradient(135deg, #99f6e4, #f4b183);
+
+      font-size: 14px;
+
+      font-weight: 800;
+
+    }
+
+ 
+
+    .nav {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      align-items: center;
+
+      justify-content: flex-end;
+
+      gap: 18px;
+
+    }
+
+ 
+
+    .nav a {
+
+      color: rgba(255,255,255,.78);
+
+      font-size: 14px;
+
+      font-weight: 700;
+
+      text-decoration: none;
+
+      transition: color .2s ease;
+
+    }
+
+ 
+
+    .nav a:hover { color: white; }
+
+ 
+
+    .hero {
+
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 760px;
+
+      display: grid;
+
+      align-items: center;
+
+      color: white;
+
+      background:
+
+        linear-gradient(120deg, rgba(16,24,32,.98), rgba(20,43,58,.95) 55%, rgba(15,118,110,.85)),
+
+        url("hero-engineering.jpg") center/cover no-repeat;
+
+    }
+
+ 
+
+    .hero::before {
+
+      content: "";
+
+      position: absolute;
+
+      inset: 0;
+
+      opacity: .13;
+
+      background-image:
+
+        linear-gradient(rgba(255,255,255,.25) 1px, transparent 1px),
+
+        linear-gradient(90deg, rgba(255,255,255,.25) 1px, transparent 1px);
+
+      background-size: 48px 48px;
+
+      mask-image: linear-gradient(to bottom, black, transparent 85%);
+
+    }
+
+ 
+
+    .hero-grid {
+
+      position: relative;
+
+      z-index: 1;
+
+      display: grid;
+
+      grid-template-columns: 1.2fr .8fr;
+
+      gap: 60px;
+
+      align-items: center;
+
+      padding: 110px 0 90px;
+
+    }
+
+ 
+
+    .kicker {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      gap: 10px;
+
+      margin-bottom: 22px;
+
+      padding: 8px 13px;
+
+      border: 1px solid rgba(255,255,255,.22);
+
+      border-radius: 999px;
+
+      background: rgba(255,255,255,.08);
+
+      color: #ccfbf1;
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      letter-spacing: .14em;
+
+      text-transform: uppercase;
+
+    }
+
+ 
+
+    .kicker::before {
+
+      content: "";
+
+      width: 8px;
+
+      height: 8px;
+
+      border-radius: 50%;
+
+      background: #5eead4;
+
+      box-shadow: 0 0 0 5px rgba(94,234,212,.12);
+
+    }
+
+ 
+
+    h1, h2, h3 {
+
+      font-family: "Space Grotesk", sans-serif;
+
+      letter-spacing: -.035em;
+
+    }
+
+ 
+
+    h1 {
+
+      max-width: 780px;
+
+      margin: 0;
+
+      font-size: clamp(52px, 8vw, 92px);
+
+      line-height: .98;
+
+    }
+
+ 
+
+    h1 span { color: #99f6e4; }
+
+ 
+
+    .hero-copy {
+
+      max-width: 760px;
+
+      margin: 28px 0 34px;
+
+      color: rgba(255,255,255,.76);
+
+      font-size: clamp(18px, 2.2vw, 22px);
+
+    }
+
+ 
+
+    .hero-actions {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 14px;
+
+    }
+
+ 
+
+    .button {
+
+      display: inline-flex;
+
+      align-items: center;
+
+      justify-content: center;
+
+      min-height: 50px;
+
+      padding: 12px 20px;
+
+      border-radius: 13px;
+
+      font-weight: 800;
+
+      text-decoration: none;
+
+      transition: transform .22s ease, box-shadow .22s ease;
+
+    }
+
+ 
+
+    .button:hover { transform: translateY(-3px); }
+
+    .button-primary { color: var(--ink); background: #99f6e4; box-shadow: 0 12px 30px rgba(94,234,212,.18); }
+
+    .button-ghost { color: white; border: 1px solid rgba(255,255,255,.28); background: rgba(255,255,255,.08); }
+
+ 
+
+    .hero-panel {
+
+      padding: 24px;
+
+      border: 1px solid rgba(255,255,255,.16);
+
+      border-radius: 28px;
+
+      background: rgba(255,255,255,.08);
+
+      box-shadow: 0 28px 80px rgba(0,0,0,.22);
+
+      backdrop-filter: blur(18px);
+
+    }
+
+ 
+
+    .hero-photo {
+
+      aspect-ratio: 4 / 5;
+
+      width: 100%;
+
+      object-fit: cover;
+
+      border-radius: 20px;
+
+      background: #233845;
+
+    }
+
+ 
+
+    .hero-panel-caption {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 18px;
+
+      margin-top: 18px;
+
+      color: rgba(255,255,255,.68);
+
+      font-size: 13px;
+
+    }
+
+ 
+
+    .hero-panel-caption strong { color: white; }
+
+ 
+
+    .section { padding: 100px 0; }
+
+    .section-alt { background: var(--white); }
+
+ 
+
+    .section-head {
+
+      display: grid;
+
+      grid-template-columns: .65fr 1.35fr;
+
+      gap: 36px;
+
+      margin-bottom: 48px;
+
+      align-items: end;
+
+    }
+
+ 
+
+    .section-number {
+
+      color: var(--copper);
+
+      font-size: 13px;
+
+      font-weight: 800;
+
+      letter-spacing: .14em;
+
+      text-transform: uppercase;
+
+    }
+
+ 
+
+    h2 {
+
+      margin: 4px 0 0;
+
+      color: var(--navy);
+
+      font-size: clamp(38px, 5vw, 58px);
+
+      line-height: 1.05;
+
+    }
+
+ 
+
+    .section-intro {
+
+      margin: 0;
+
+      color: var(--ink-soft);
+
+      font-size: 18px;
+
+    }
+
+ 
+
+    .capability-grid {
+
+      display: grid;
+
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+
+      gap: 18px;
+
+    }
+
+ 
+
+    .capability-card {
+
+      position: relative;
+
+      overflow: hidden;
+
+      min-height: 300px;
+
+      padding: 28px;
+
+      border: 1px solid var(--line);
+
+      border-radius: var(--radius-lg);
+
+      background: white;
+
+      box-shadow: 0 12px 34px rgba(20,43,58,.07);
+
+    }
+
+ 
+
+    .capability-card.large { grid-column: span 7; }
+
+    .capability-card.small { grid-column: span 5; }
+
+ 
+
+    .capability-card.dark {
+
+      color: white;
+
+      border-color: transparent;
+
+      background: var(--navy);
+
+    }
+
+ 
+
+    .capability-card.media {
+
+      min-height: 420px;
+
+      color: white;
+
+      background: linear-gradient(to top, rgba(16,24,32,.9), rgba(16,24,32,.1)), url("capability-hkls.jpg") center/cover no-repeat;
+
+    }
+
+ 
+
+    .capability-icon {
+
+      width: 48px;
+
+      height: 48px;
+
+      display: grid;
+
+      place-items: center;
+
+      border-radius: 14px;
+
+      background: var(--teal-light);
+
+      color: var(--teal);
+
+      font-weight: 900;
+
+    }
+
+ 
+
+    .dark .capability-icon { color: white; background: rgba(255,255,255,.12); }
+
+ 
+
+    .capability-card h3 {
+
+      margin: 48px 0 12px;
+
+      font-size: 28px;
+
+      line-height: 1.15;
+
+    }
+
+ 
+
+    .capability-card p { margin: 0; color: var(--ink-soft); }
+
+    .capability-card.dark p, .capability-card.media p { color: rgba(255,255,255,.72); }
+
+ 
+
+    .capability-tags {
+
+      display: flex;
+
+      flex-wrap: wrap;
+
+      gap: 8px;
+
+      margin-top: 24px;
+
+    }
+
+ 
+
+    .capability-tags span {
+
+      padding: 7px 10px;
+
+      border-radius: 999px;
+
+      background: var(--paper);
+
+      color: var(--ink-soft);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+    }
+
+ 
+
+    .dark .capability-tags span, .media .capability-tags span {
+
+      color: white;
+
+      background: rgba(255,255,255,.1);
+
+    }
+
+ 
+
+    .project-stack { display: grid; gap: 34px; }
+
+ 
+
+    .project {
+
+      overflow: hidden;
+
+      display: grid;
+
+      grid-template-columns: 1.05fr .95fr;
+
+      border: 1px solid var(--line);
+
+      border-radius: 30px;
+
+      background: white;
+
+      box-shadow: var(--shadow);
+
+    }
+
+ 
+
+    .project:nth-child(even) .project-media { order: 2; }
+
+ 
+
+    .project-media {
+
+      position: relative;
+
+      min-height: 480px;
+
+      background: #d7dfdf;
+
+    }
+
+ 
+
+    .project-media img,
+
+    .project-media video {
+
+      width: 100%;
+
+      height: 100%;
+
+      min-height: 480px;
+
+      display: block;
+
+      object-fit: cover;
+
+    }
+
+ 
+
+    .media-badge {
+
+      position: absolute;
+
+      left: 22px;
+
+      bottom: 22px;
+
+      padding: 9px 12px;
+
+      border-radius: 999px;
+
+      color: white;
+
+      background: rgba(16,24,32,.78);
+
+      font-size: 12px;
+
+      font-weight: 800;
+
+      backdrop-filter: blur(12px);
+
+    }
+
+ 
+
+    .project-copy {
+
+      padding: 46px;
+
+      display: flex;
+
+      flex-direction: column;
+
+      justify-content: center;
+
+    }
+
+ 
+
+    .project-type {
+
+      color: var(--teal);
+
+      font-size: 12px;
+
+      font-weight: 900;
+
+      letter-spacing: .14em;
+
+      text-transform: uppercase;
+
+    }
+
+ 
+
+    .project h3 {
+
+      margin: 12px 0 16px;
+
+      color: var(--navy);
+
+      font-size: clamp(30px, 4vw, 44px);
+
+      line-height: 1.08;
+
+    }
+
+ 
+
+    .project-copy > p { margin: 0; color: var(--ink-soft); font-size: 17px; }
+
+ 
+
+    .project-points {
+
+      display: grid;
+
+      gap: 12px;
+
+      margin: 26px 0 0;
+
+      padding: 0;
+
+      list-style: none;
+
+    }
+
+ 
+
+    .project-points li {
+
+      display: grid;
+
+      grid-template-columns: 28px 1fr;
+
+      gap: 10px;
+
+      color: var(--ink-soft);
+
+    }
+
+ 
+
+    .project-points li::before {
+
+      content: "↗";
+
+      color: var(--copper);
+
+      font-weight: 900;
+
+    }
+
+ 
+
+    .dashboard {
+
+      display: grid;
+
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+
+      gap: 22px;
+
+    }
+
+ 
+
+    .chart-card {
+
+      min-height: 440px;
+
+      padding: 30px;
+
+      border: 1px solid var(--line);
+
+      border-radius: 26px;
+
+      background: white;
+
+      box-shadow: 0 12px 34px rgba(20,43,58,.07);
+
+    }
+
+ 
+
+    .chart-card h3 { margin: 0 0 4px; color: var(--navy); font-size: 24px; }
+
+    .chart-card p { margin: 0 0 24px; color: var(--ink-soft); font-size: 14px; }
+
+    .chart-wrap { position: relative; height: 330px; }
+
+ 
+
+    .gallery-grid {
+
+      display: grid;
+
+      grid-template-columns: 1.2fr .8fr .8fr;
+
+      grid-auto-rows: 250px;
+
+      gap: 16px;
+
+    }
+
+ 
+
+    .gallery-item {
+
+      position: relative;
+
+      overflow: hidden;
+
+      margin: 0;
+
+      border-radius: 22px;
+
+      background: #d8dedf;
+
+    }
+
+ 
+
+    .gallery-item:first-child { grid-row: span 2; }
+
+    .gallery-item img, .gallery-item video { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+ 
+
+    .gallery-item figcaption {
+
+      position: absolute;
+
+      inset: auto 14px 14px 14px;
+
+      padding: 10px 12px;
+
+      border-radius: 12px;
+
+      color: white;
+
+      background: rgba(16,24,32,.72);
+
+      font-size: 12px;
+
+      font-weight: 700;
+
+      backdrop-filter: blur(10px);
+
+    }
+
+ 
+
+    .process {
+
+      display: grid;
+
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+
+      gap: 16px;
+
+      counter-reset: process;
+
+    }
+
+ 
+
+    .process-step {
+
+      padding: 26px;
+
+      border-top: 3px solid var(--teal);
+
+      background: white;
+
+      box-shadow: 0 10px 30px rgba(20,43,58,.06);
+
+    }
+
+ 
+
+    .process-step::before {
+
+      counter-increment: process;
+
+      content: "0" counter(process);
+
+      display: block;
+
+      margin-bottom: 34px;
+
+      color: var(--copper);
+
+      font-family: "Space Grotesk", sans-serif;
+
+      font-size: 18px;
+
+      font-weight: 800;
+
+    }
+
+ 
+
+    .process-step h3 { margin: 0 0 8px; color: var(--navy); font-size: 22px; }
+
+    .process-step p { margin: 0; color: var(--ink-soft); font-size: 14px; }
+
+ 
+
+    .contact {
+
+      padding: 110px 0;
+
+      color: white;
+
+      background: var(--ink);
+
+    }
+
+ 
+
+    .contact-card {
+
+      display: grid;
+
+      grid-template-columns: 1.2fr .8fr;
+
+      gap: 40px;
+
+      align-items: center;
+
+      padding: 52px;
+
+      border: 1px solid rgba(255,255,255,.12);
+
+      border-radius: 30px;
+
+      background: linear-gradient(135deg, rgba(15,118,110,.28), rgba(198,107,61,.16));
+
+    }
+
+ 
+
+    .contact h2 { color: white; }
+
+    .contact p { max-width: 720px; color: rgba(255,255,255,.7); }
+
+ 
+
+    .contact-links {
+
+      display: grid;
+
+      gap: 12px;
+
+    }
+
+ 
+
+    .contact-link {
+
+      display: flex;
+
+      justify-content: space-between;
+
+      gap: 18px;
+
+      padding: 14px 16px;
+
+      border: 1px solid rgba(255,255,255,.14);
+
+      border-radius: 14px;
+
+      color: white;
+
+      text-decoration: none;
+
+      background: rgba(255,255,255,.06);
+
+    }
+
+ 
+
+    footer {
+
+      padding: 26px 20px;
+
+      color: rgba(255,255,255,.55);
+
+      text-align: center;
+
+      background: #0b1117;
+
+      font-size: 13px;
+
+    }
+
+ 
+
+    @media (max-width: 920px) {
+
+      .hero-grid, .section-head, .project, .contact-card { grid-template-columns: 1fr; }
+
+      .hero-panel { max-width: 520px; }
+
+      .capability-card.large, .capability-card.small { grid-column: span 12; }
+
+      .project:nth-child(even) .project-media { order: initial; }
+
+      .dashboard { grid-template-columns: 1fr; }
+
+      .gallery-grid { grid-template-columns: 1fr 1fr; }
+
+      .gallery-item:first-child { grid-column: span 2; grid-row: auto; }
+
+      .process { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+
+    }
+
+ 
+
+    @media (max-width: 640px) {
+
+      .shell { width: min(100% - 28px, var(--max-width)); }
+
+      .nav { display: none; }
+
+      .hero-grid { padding: 84px 0 72px; }
+
+      h1 { font-size: 52px; }
+
+      .section { padding: 74px 0; }
+
+      .project-copy { padding: 30px 24px; }
+
+      .project-media, .project-media img, .project-media video { min-height: 340px; }
+
+      .gallery-grid { grid-template-columns: 1fr; grid-auto-rows: 250px; }
+
+      .gallery-item:first-child { grid-column: auto; }
+
+      .process { grid-template-columns: 1fr; }
+
+      .contact-card { padding: 30px 24px; }
+
+    }
+
+ 
+
+    @media (prefers-reduced-motion: reduce) {
+
+      html { scroll-behavior: auto; }
+
+      *, *::before, *::after { transition: none !important; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <nav class="topbar" aria-label="Primary navigation">
+
+    <div class="shell topbar-inner">
+
+      <a class="brand" href="#top">
+
+        <span class="brand-mark">MS</span>
+
+        <span>Mostafa Salama · Engineering Portfolio</span>
+
+      </a>
+
+      <div class="nav">
+
+        <a href="#capabilities">Capabilities</a>
+
+        <a href="#work">Selected Work</a>
+
+        <a href="#data">Engineering Data</a>
+
+        <a href="#media">Media</a>
+
+        <a href="#contact">Contact</a>
+
+      </div>
+
+    </div>
+
+  </nav>
+
+ 
+
+  <header class="hero" id="top">
+
+    <div class="shell hero-grid">
+
+      <div>
+
+        <span class="kicker">Mechanical · Energy · Building Systems</span>
+
+        <h1>I turn engineering problems into <span>workable systems.</span></h1>
+
+        <p class="hero-copy">
+
+          This portfolio is not a digital CV. It is a visual record of how I analyze systems,
+
+          develop technical solutions, test ideas and communicate engineering results across
+
+          TGA/HKLS, energy, maintenance, automation and prototyping.
+
+        </p>
+
+        <div class="hero-actions">
+
+          <a class="button button-primary" href="#work">Explore selected work</a>
+
+          <a class="button button-ghost" href="#contact">Start a conversation</a>
+
+        </div>
+
+      </div>
+
+ 
+
+      <aside class="hero-panel" aria-label="Profile image and focus areas">
+
+        <img class="hero-photo" src="profile-mostafa.jpg" alt="Portrait of Mostafa Salama" />
+
+        <div class="hero-panel-caption">
+
+          <span><strong>Focus</strong><br />TGA · HKLS · Energy</span>
+
+          <span><strong>Approach</strong><br />Design · Test · Improve</span>
+
+        </div>
+
+      </aside>
+
+    </div>
+
+  </header>
+
+ 
+
+  <main>
+
+    <section class="section" id="capabilities">
+
+      <div class="shell">
+
+        <div class="section-head">
+
+          <div>
+
+            <span class="section-number">01 · Capabilities</span>
+
+            <h2>What I can contribute</h2>
+
+          </div>
+
+          <p class="section-intro">
+
+            A practical combination of mechanical engineering, energy-system thinking,
+
+            technical building services, industrial maintenance and hands-on fabrication.
+
+          </p>
+
+        </div>
+
+ 
+
+        <div class="capability-grid">
+
+          <article class="capability-card large media">
+
+            <div class="capability-icon">01</div>
+
+            <h3>TGA &amp; HKLS system planning</h3>
+
+            <p>Understanding system layouts, equipment selection, technical drawings and coordination logic for building-services projects.</p>
+
+            <div class="capability-tags"><span>Revit MEP</span><span>AutoCAD</span><span>HVAC</span><span>Fire protection</span></div>
+
+          </article>
+
+ 
+
+          <article class="capability-card small dark">
+
+            <div class="capability-icon">02</div>
+
+            <h3>Maintenance &amp; reliability</h3>
+
+            <p>Inspection, preventive maintenance, bearing monitoring, lubrication strategy and fault-oriented technical thinking.</p>
+
+            <div class="capability-tags"><span>SKF Monitoring</span><span>Pumps</span><span>Bearings</span><span>Steam traps</span></div>
+
+          </article>
+
+ 
+
+          <article class="capability-card small">
+
+            <div class="capability-icon">03</div>
+
+            <h3>Energy-system analysis</h3>
+
+            <p>System sizing and performance assessment for photovoltaic, pumping and thermodynamic applications.</p>
+
+            <div class="capability-tags"><span>PV*SOL</span><span>Thermodynamics</span><span>Fluid systems</span></div>
+
+          </article>
+
+ 
+
+          <article class="capability-card large">
+
+            <div class="capability-icon">04</div>
+
+            <h3>Testing, automation &amp; prototyping</h3>
+
+            <p>Structured testing, measurement interpretation, test-bench teamwork and rapid prototyping through CAD, 3D printing and laser cutting.</p>
+
+            <div class="capability-tags"><span>LabVIEW</span><span>SolidWorks</span><span>Fusion 360</span><span>3D printing</span></div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+
+    <section class="section section-alt" id="work">
+
+      <div class="shell">
+
+        <div class="section-head">
+
+          <div>
+
+            <span class="section-number">02 · Selected Work</span>
+
+            <h2>Projects shown as evidence</h2>
+
+          </div>
+
+          <p class="section-intro">
+
+            Each case study should show the challenge, your contribution, the technical method and the result—supported by photos, diagrams, data and video.
+
+          </p>
+
+        </div>
+
+ 
+
+        <div class="project-stack">
+
+          <article class="project">
+
+            <div class="project-media">
+
+              <video controls preload="metadata" poster="powertrain-poster.jpg">
+
+                <source src="powertrain-testbench.mp4" type="video/mp4" />
+
+                Your browser does not support video.
+
+              </video>
+
+              <span class="media-badge">Video · Test bench sequence</span>
+
+            </div>
+
+            <div class="project-copy">
+
+              <span class="project-type">Test Engineering · FH Dortmund</span>
+
+              <h3>Powertrain and test-bench project</h3>
+
+              <p>A visual case study documenting how a test process was understood, executed and evaluated within a multidisciplinary powertrain team.</p>
+
+              <ul class="project-points">
+
+                <li>Show the system layout and explain the purpose of the test bench.</li>
+
+                <li>Include screenshots of measurement signals and your interpretation.</li>
+
+                <li>Present the test workflow, safety logic and lessons learned.</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+ 
+
+          <article class="project">
+
+            <div class="project-media">
+
+              <img src="pv-irrigation-system.jpg" alt="Photovoltaic irrigation system concept" />
+
+              <span class="media-badge">Diagram · Energy-system design</span>
+
+            </div>
+
+            <div class="project-copy">
+
+              <span class="project-type">Renewable Energy · Bachelor Project</span>
+
+              <h3>Solar irrigation system for desert agriculture</h3>
+
+              <p>A system-level design combining solar generation, groundwater pumping and agricultural demand under challenging site conditions.</p>
+
+              <ul class="project-points">
+
+                <li>Present the energy-demand calculation and design assumptions.</li>
+
+                <li>Show PV*SOL outputs, module orientation and sizing decisions.</li>
+
+                <li>Explain how pump demand and operating hours influenced the design.</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+ 
+
+          <article class="project">
+
+            <div class="project-media">
+
+              <img src="hkls-model.jpg" alt="TGA and HKLS model created in Revit MEP" />
+
+              <span class="media-badge">3D model · Revit MEP</span>
+
+            </div>
+
+            <div class="project-copy">
+
+              <span class="project-type">Building Services · Ongoing Development</span>
+
+              <h3>TGA/HKLS planning studies</h3>
+
+              <p>A growing collection of building-services exercises showing system routing, component placement and coordinated technical drawings.</p>
+
+              <ul class="project-points">
+
+                <li>Use model screenshots instead of listing course modules.</li>
+
+                <li>Include one floor plan, one section and one 3D coordination view.</li>
+
+                <li>Add short design notes explaining your technical decisions.</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+ 
+
+          <article class="project">
+
+            <div class="project-media">
+
+              <video controls preload="metadata" poster="fabrication-poster.jpg">
+
+                <source src="prototype-process.mp4" type="video/mp4" />
+
+                Your browser does not support video.
+
+              </video>
+
+              <span class="media-badge">Video · Fabrication process</span>
+
+            </div>
+
+            <div class="project-copy">
+
+              <span class="project-type">Digital Fabrication · Product Development</span>
+
+              <h3>3D printing, laser cutting and custom prototypes</h3>
+
+              <p>Examples of translating customer requirements into CAD models, physical prototypes and functional technical solutions.</p>
+
+              <ul class="project-points">
+
+                <li>Show sketches, CAD, fabrication and final result in sequence.</li>
+
+                <li>Explain material selection and design-for-manufacturing choices.</li>
+
+                <li>Include compact before/after comparisons and customer constraints.</li>
+
+              </ul>
+
+            </div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+
+    <section class="section" id="data">
+
+      <div class="shell">
+
+        <div class="section-head">
+
+          <div>
+
+            <span class="section-number">03 · Engineering Data</span>
+
+            <h2>Make the technical thinking visible</h2>
+
+          </div>
+
+          <p class="section-intro">
+
+            Charts should support a project story, not act as decoration. Replace the sample data below with real measurements, calculations or project milestones.
+
+          </p>
+
+        </div>
+
+ 
+
+        <div class="dashboard">
+
+          <article class="chart-card">
+
+            <h3>Capability map</h3>
+
+            <p>Illustrative overview—replace values with an honest self-assessment or project evidence.</p>
+
+            <div class="chart-wrap"><canvas id="skillsChart"></canvas></div>
+
+          </article>
+
+ 
+
+          <article class="chart-card">
+
+            <h3>Example test result</h3>
+
+            <p>Use this format for temperature, vibration, flow, pressure or energy-performance data.</p>
+
+            <div class="chart-wrap"><canvas id="performanceChart"></canvas></div>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+
+    <section class="section section-alt" id="media">
+
+      <div class="shell">
+
+        <div class="section-head">
+
+          <div>
+
+            <span class="section-number">04 · Media Library</span>
+
+            <h2>Show the work, not only the outcome</h2>
+
+          </div>
+
+          <p class="section-intro">Use sharp images with captions that explain what the viewer is looking at and why it matters.</p>
+
+        </div>
+
+ 
+
+        <div class="gallery-grid">
+
+          <figure class="gallery-item">
+
+            <img src="gallery-testbench.jpg" alt="Powertrain test bench setup" />
+
+            <figcaption>Powertrain test bench · system overview</figcaption>
+
+          </figure>
+
+          <figure class="gallery-item">
+
+            <img src="gallery-revit.jpg" alt="Revit MEP building-services model" />
+
+            <figcaption>Revit MEP · coordinated system routing</figcaption>
+
+          </figure>
+
+          <figure class="gallery-item">
+
+            <img src="gallery-maintenance.jpg" alt="Industrial maintenance inspection" />
+
+            <figcaption>Maintenance · inspection and condition monitoring</figcaption>
+
+          </figure>
+
+          <figure class="gallery-item">
+
+            <video controls muted poster="gallery-prototype-poster.jpg">
+
+              <source src="gallery-prototype.mp4" type="video/mp4" />
+
+            </video>
+
+            <figcaption>Prototype · CAD to manufactured part</figcaption>
+
+          </figure>
+
+          <figure class="gallery-item">
+
+            <img src="gallery-pvsol.jpg" alt="PV system simulation output" />
+
+            <figcaption>PV*SOL · energy yield and design checks</figcaption>
+
+          </figure>
+
+        </div>
+
+      </div>
+
+    </section>
+
+ 
+
+    <section class="section">
+
+      <div class="shell">
+
+        <div class="section-head">
+
+          <div>
+
+            <span class="section-number">05 · Working Method</span>
+
+            <h2>How I approach technical problems</h2>
+
+          </div>
+
+          <p class="section-intro">A simple process that connects requirements, engineering analysis, implementation and verification.</p>
+
+        </div>
+
+ 
+
+        <div class="process">
+
+          <article class="process-step"><h3>Understand</h3><p>Clarify the system, constraints, safety requirements and intended result.</p></article>
+
+          <article class="process-step"><h3>Model</h3><p>Translate the problem into drawings, calculations, simulations or test logic.</p></article>
+
+          <article class="process-step"><h3>Build &amp; test</h3><p>Create a prototype or test procedure and collect meaningful evidence.</p></article>
+
+          <article class="process-step"><h3>Improve</h3><p>Evaluate the result, identify weaknesses and communicate the next iteration.</p></article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+ 
+
+  <section class="contact" id="contact">
+
+    <div class="shell contact-card">
+
+      <div>
+
+        <span class="section-number" style="color:#99f6e4">06 · Contact</span>
+
+        <h2>Let’s discuss an engineering challenge.</h2>
+
+        <p>Open to working-student roles, internships and engineering opportunities in TGA/HKLS, energy systems, maintenance and technical project work.</p>
+
+      </div>
+
+      <div class="contact-links">
+
+        <a class="contact-link" href="mailto:mostafaabdellatief9@gmail.com"><span>Email</span><strong>↗</strong></a>
+
+        <a class="contact-link" href="https://www.linkedin.com/" target="_blank" rel="noopener"><span>LinkedIn</span><strong>↗</strong></a>
+
+        <a class="contact-link" href="Mostafa-Salama-CV.pdf" target="_blank"><span>CV (PDF)</span><strong>↗</strong></a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+ 
+
+  <footer>© <span id="year"></span> Mostafa Salama · Engineering Portfolio</footer>
+
+ 
+
+  <script>
+
+    document.getElementById("year").textContent = new Date().getFullYear();
+
+ 
+
+    Chart.defaults.font.family = 'Manrope, Arial, sans-serif';
+
+    Chart.defaults.color = '#3f4b55';
+
+ 
+
+    new Chart(document.getElementById('skillsChart'), {
+
+      type: 'radar',
+
+      data: {
+
+        labels: ['TGA / HKLS', 'Energy Systems', 'Maintenance', 'CAD / BIM', 'Testing', 'Prototyping'],
+
+        datasets: [{
+
+          label: 'Capability evidence',
+
+          data: [78, 86, 82, 74, 76, 84],
+
+          borderColor: '#0f766e',
+
+          backgroundColor: 'rgba(15, 118, 110, 0.16)',
+
+          pointBackgroundColor: '#c66b3d',
+
+          pointBorderColor: '#ffffff',
+
+          borderWidth: 2
+
+        }]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        scales: {
+
+          r: {
+
+            suggestedMin: 0,
+
+            suggestedMax: 100,
+
+            ticks: { display: false },
+
+            grid: { color: 'rgba(16,24,32,.12)' },
+
+            angleLines: { color: 'rgba(16,24,32,.12)' },
+
+            pointLabels: { font: { size: 12, weight: 700 } }
+
+          }
+
+        },
+
+        plugins: { legend: { display: false } }
+
+      }
+
+    });
+
+ 
+
+    new Chart(document.getElementById('performanceChart'), {
+
+      type: 'line',
+
+      data: {
+
+        labels: ['0', '10', '20', '30', '40', '50', '60'],
+
+        datasets: [
+
+          {
+
+            label: 'Measured value',
+
+            data: [18, 28, 42, 55, 63, 68, 70],
+
+            borderColor: '#0f766e',
+
+            backgroundColor: 'rgba(15,118,110,.12)',
+
+            fill: true,
+
+            tension: .35,
+
+            pointRadius: 3
+
+          },
+
+          {
+
+            label: 'Target',
+
+            data: [20, 30, 40, 50, 60, 70, 75],
+
+            borderColor: '#c66b3d',
+
+            borderDash: [7, 6],
+
+            tension: .2,
+
+            pointRadius: 0
+
+          }
+
+        ]
+
+      },
+
+      options: {
+
+        responsive: true,
+
+        maintainAspectRatio: false,
+
+        scales: {
+
+          x: { title: { display: true, text: 'Time / operating point' }, grid: { display: false } },
+
+          y: { title: { display: true, text: 'Measured quantity' }, grid: { color: 'rgba(16,24,32,.09)' } }
+
+        },
+
+        plugins: {
+
+          legend: { position: 'bottom', labels: { usePointStyle: true, boxWidth: 8 } }
+
+        }
+
+      }
+
+    });
+
+  </script>
+
+</body>
+
+</html>
