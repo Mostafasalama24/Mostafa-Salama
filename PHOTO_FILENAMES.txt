@@ -1,0 +1,26 @@
+Original filename -> GitHub filename
+All image files go in the same folder as index.html.
+
+WhatsApp Image 2026-11-08 at 10.34.14 PM.jpeg -> hvac-ductwork-overview.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (1).jpeg -> formula-student-cooling-system-closeup.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (2).jpeg -> formula-student-vibration-measurement.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (3).jpeg -> solar-tracker-initial-concept.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (4).jpeg -> solar-tracker-cardboard-prototype.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (5).jpeg -> solar-tracker-prototype-components.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM (6).jpeg -> solar-tracker-fusion360-base-drawing.jpg
+WhatsApp Image 2026-11-08 at 11.17.14 PM.jpeg -> formula-student-vehicle-workshop.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (1).jpeg -> solar-tracker-fusion360-mechanical-drawing.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (2).jpeg -> solar-tracker-laser-cut-layout.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (3).jpeg -> solar-tracker-laser-cut-panels.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (4).jpeg -> solar-tracker-fabricated-wooden-parts.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (5).jpeg -> solar-tracker-servo-assembly.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (6).jpeg -> solar-tracker-assembled-front.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM (7).jpeg -> solar-tracker-assembled-side.jpg
+WhatsApp Image 2026-11-08 at 11.17.15 PM.jpeg -> solar-tracker-fusion360-3d-model.jpg
+WhatsApp Image 2026-11-08 at 11.17.22 PM.jpeg -> hvac-room-load-inputs.jpg
+WhatsApp Image 2026-11-08 at 11.17.23 PM (1).jpeg -> hvac-hap-project-overview.jpg
+WhatsApp Image 2026-11-08 at 11.17.23 PM (2).jpeg -> hvac-ductwork-detail.jpg
+WhatsApp Image 2026-11-08 at 11.17.23 PM (3).jpeg -> hvac-ductwork-main-plan.jpg
+WhatsApp Image 2026-11-08 at 11.17.23 PM.jpeg -> hvac-hap-space-input-report.jpg
+WhatsApp Image 2026-11-08 at 11.17.24 PM.jpeg -> hvac-air-conditioner-selection.jpg
+WhatsApp Image 2026-11-08 at 11.18.03 PM.jpeg -> hvac-autocad-architectural-plan.jpg
